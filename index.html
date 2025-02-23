@@ -1,612 +1,633 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal Portfolio</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.ico"
+      type="image/x-icon"
+    />
 
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
+  <body>
+    <main>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="./assets/images/mia_foto.jpg"
+              alt="Anna Inversi"
+              width="80"
+            />
+          </figure>
 
-<body>
+          <div class="info-content">
+            <h1 class="name" title="Anna Inversi">Anna Inversi</h1>
 
-  <main>
+            <p class="title">Aspirante Backend developer</p>
+          </div>
 
-    <aside class="sidebar" data-sidebar>
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
 
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/mia_foto.jpg" alt="Anna Inversi" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Anna Inversi">Anna Inversi</h1>
-
-          <p class="title">Aspirante Backend developer</p>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
 
-      </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
 
-      <div class="sidebar-info_more">
+                <a href="mailto:annainversi205@gmail.com" class="contact-link"
+                  >annainversi205@gmail.com</a
+                >
+              </div>
+            </li>
 
-        <div class="separator"></div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
 
-        <ul class="contacts-list">
+              <div class="contact-info">
+                <p class="contact-title">Telefono</p>
 
-          <li class="contact-item">
+                <a href="tel:+393484432907" class="contact-link"
+                  >+39 348 443 2907</a
+                >
+              </div>
+            </li>
 
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="calendar-outline"></ion-icon>
+              </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
+              <div class="contact-info">
+                <p class="contact-title">Data di nascita</p>
 
-              <a href="mailto:annainversi205@gmail.com" class="contact-link">annainversi205@gmail.com</a>
-            </div>
+                <time datetime="1996-10-19">19/10/1996</time>
+              </div>
+            </li>
 
-          </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
 
-          <li class="contact-item">
+              <div class="contact-info">
+                <p class="contact-title">Indirizzo</p>
 
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Telefono</p>
-
-              <a href="tel:+393484432907" class="contact-link">+39 348 443 2907</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Data di nascita</p>
-
-              <time datetime="1996-10-19">19/10/1996</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Indirizzo</p>
-
-              <address>Luigi Galvani 33, 37138, Verona</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://github.com/Chizu-last" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/anna-inversi-14375834b/" class="social-link">
-              <ion-icon name="logo-Linkedin"></ion-icon>
-            </a>
-          </li>
-
+                <address>Luigi Galvani 33, 37138, Verona</address>
+              </div>
+            </li>
           </ul>
 
-      </div>
-
-    </aside>
-
-
-
-    <div class="main-content">
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Curriculum</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contatti</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            Ciao, mi chiamo Anna, ed ho 28 anni. Ho sempre avuto un grande interesse per la programmazione, fin dai tempi del liceo. Volendo esplorare un altro percorso, tuttavia, ho finito per intraprendere la strada dell'informatica solo quando ho deciso di seguire il corso ITS Academy LAST, come System Administrator. Quest'opportunità mi ha reso molto felice, ed ora mi sto impegnando nell'approfondire questo immenso campo di conoscenze ed abilità che è il mondo informatico.
-          </p>
-
-          <p>
-            Nel 2015 mi sono diplomata nell'indirizzo socio-economico. Ho deciso poi d'intraprendere un percorso universitario in filosofia, il quale mi ha spronato a conseguire i miei studi in ciò che realmente mi appassionava. Ho tuttavia ritenuto abilità di studio e collaborazione con compagni e colleghi dal mio percorso universitario. Ho deciso poi di impegnarmi nel mio interesse per l'IT ed ho finito per trovare l'ITS Academy LAST. Il mio percorso è appena iniziato, ma proseguo spedita e con grande passione! 
-          </p>
-        </section>
-
-        <section class="service">
-
-          <h3 class="h3 service-title">Cosa mi piace fare</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Back/Frontend Development</h4>
-
-                <p class="service-item-text">
-                  Ho creato una web app che organizza i dati presenti in specifici file JSON e li visualizza in modo strutturato. Realizzato con PHP; il frontend utilizza JavaScript per un'interfaccia dinamica. Un database relazionale memorizza i dati importati.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-de">
-                <img src="./assets/images/icon-design.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">System Administration</h4>
-
-                <p class="service-item-text">
-                  Lavoro al mio primo progetto imparando ad utilizzare Proxmox, Ansible ed OpenTofu, per un'interfaccia grafica intuitiva. Inoltre, sto imparando ad usare efficacemente linux e docker. 
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/flight.png" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Viaggi</h4>
-
-                <p class="service-item-text">
-                  Amo viaggiare e vorrei continuare a vedere posti nuovi di continuo. Finora ho visitato la Grecia, molte città Italiane, l'Inghilterra, la Germania, la Svizzera, e vorrei aggiungere ancora molti. 
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/tool.png" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Arte</h4>
-
-                <p class="service-item-text">
-                  Sono appassionata di design e animazione. Conosco molti programmi tra cui Photoshop/Clip Studio Paint/Krita, Illustrator, After Effects, Premiere Pro...
-                </p>
-              </div>
-
-            </li>            
-
-          </ul>
-
-        </section>
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-
-            </div>
-
-          </section>
-
-        </div>
-
-
-      </article>
-
-      <article class="curriculum" data-page="curriculum">
-
-        <header>
-          <h2 class="h2 article-title">Curriculum</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Percorsi di Studi</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">ITS Academy LAST - System Administrator</h4>
-
-              <span>2024 — IN CORSO</span>
-
-              <p class="timeline-text">
-                Corso post-diploma biennale di specializzazione nell’ambito dell’informatica e delle nuove tecnologie.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Università degli Studi di Verona</h4>
-
-              <span>2015 - 2023 | Interrotto</span>
-
-              <p class="timeline-text">
-                Corso di Laurea in Filosofia con l'intento di formare esperti nel pensiero occidentale, sviluppando capacità critiche in ambito teorico, etico, estetico e politico.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Liceo Alessandro Manzoni</h4>
-
-              <span>2010 — 2015</span>
-
-              <p class="timeline-text">
-                Diploma di maturità socio-economico.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Esperienza Lavorativa</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Operaia industria metalmeccanica | Cablofil, Polesine, MN</h4>
-
-              <span>2023</span>
-
-              <p class="timeline-text">
-                Lavorazioni, assemblaggio e/o revisione di pezzi meccanici sulla base di disegni tecnici, utilizzando utensili tradizionali o a controllo numerico computerizzato.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Cameriera ed addetta alla cassa | Chocoplanet, Suzzara, MN</h4>
-
-              <span>2022 - 2023</span>
-
-              <p class="timeline-text">
-                Predisposizione della sala ristorante per il servizio. Accoglienza clienti. Vendita di prodotti e servizi dell'azienda. Gestione della clientela e il servizio in genere. Riassetto dell'area operativa.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Addetta alle Vendite | Rossetto, Suzzara, MN</h4>
-
-              <span>2021 - 2022</span>
-
-              <p class="timeline-text">
-                Assistenza ai clienti durante le decisioni per gli acquisti. Vendita dei prodotti. Sistemazione dei prodotti a scaffale e allestimento vetrine. Gestione della cassa. Ordine e sistemazione del punto vendita.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Java</h5>
-                <data value="30">30%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 30%;"></div>
-              </div>
-
-            </li>
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">linux</h5>
-                <data value="50">50%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 50%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Comunicazione</h5>
-                <data value="70">80%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Python</h5>
-                <data value="40">40%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 40%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Docker</h5>
-                <data value="20">20%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 20%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web design</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Web development</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/web_app.png" alt="orizon" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Web App</h3>
-
-                <p class="project-category">MatchMaker - WORK IN PROGRESS</p>
-
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="https://github.com/Chizu-last" class="social-link">
+                <ion-icon name="logo-github"></ion-icon>
               </a>
             </li>
 
-
-
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/anna-inversi-14375834b/"
+                class="social-link"
+              >
+                <ion-icon name="logo-Linkedin"></ion-icon>
+              </a>
+            </li>
           </ul>
+        </div>
+      </aside>
 
-        </section>
+      <div class="main-content">
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
 
-      </article>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Curriculum</button>
+            </li>
 
-      <article class="contatti" data-page="contatti">
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
 
-        <header>
-          <h2 class="h2 article-title">Contatti</h2>
-        </header>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contatti</button>
+            </li>
+          </ul>
+        </nav>
 
-        <section class="contatti-personali">
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
 
-          <h3 class="h3 form-title">Qui è dove puoi contattarmi!</h3>
+          <section class="about-text">
+            <p>
+              Ciao, mi chiamo Anna, ed ho 28 anni. Ho sempre avuto un grande
+              interesse per la programmazione, fin dai tempi del liceo. Volendo
+              esplorare un altro percorso, tuttavia, ho finito per intraprendere
+              la strada dell'informatica solo quando ho deciso di seguire il
+              corso ITS Academy LAST, come System Administrator.
+              Quest'opportunità mi ha reso molto felice, ed ora mi sto
+              impegnando nell'approfondire questo immenso campo di conoscenze ed
+              abilità che è il mondo informatico.
+            </p>
 
-          <form action="https://formsubmit.co/annainversi205@gmail.com" method="POST" class="form" data-form>
+            <p>
+              Nel 2015 mi sono diplomata nell'indirizzo socio-economico. Ho
+              deciso poi d'intraprendere un percorso universitario in filosofia,
+              il quale mi ha spronato a conseguire i miei studi in ciò che
+              realmente mi appassionava. Ho tuttavia ritenuto abilità di studio
+              e collaborazione con compagni e colleghi dal mio percorso
+              universitario. Ho deciso poi di impegnarmi nel mio interesse per
+              l'IT ed ho finito per trovare l'ITS Academy LAST. Il mio percorso
+              è appena iniziato, ma proseguo spedita e con grande passione!
+            </p>
+          </section>
 
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+          <section class="service">
+            <h3 class="h3 service-title">Cosa mi piace fare</h3>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.png"
+                    alt="design icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">
+                    Back/Frontend Development
+                  </h4>
+
+                  <p class="service-item-text">
+                    Ho creato una web app che organizza i dati presenti in
+                    specifici file JSON e li visualizza in modo strutturato.
+                    Realizzato con PHP; il frontend utilizza JavaScript per
+                    un'interfaccia dinamica. Un database relazionale memorizza i
+                    dati importati.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-de">
+                  <img
+                    src="./assets/images/icon-design.png"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">System Administration</h4>
+
+                  <p class="service-item-text">
+                    Lavoro al mio primo progetto imparando ad utilizzare
+                    Proxmox, Ansible ed OpenTofu, per un'interfaccia grafica
+                    intuitiva. Inoltre, sto imparando ad usare efficacemente
+                    linux e docker.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/flight.png"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Viaggi</h4>
+
+                  <p class="service-item-text">
+                    Amo viaggiare. Sto poco a poco scoprendo tutto ciò che c'è da scoprire sull'Italia, ed ho inoltre visitato la Grecia, l'Inghilterra, la Germania, la Spagna, la Svizzera... amo l'Italia, ma è innegabile il fascino di nuove ed interessanti realtà.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/tool.png"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Arte</h4>
+
+                  <p class="service-item-text">
+                    Sono appassionata di design e animazione. Conosco molti
+                    programmi tra cui Photoshop/Clip Studio Paint/Krita,
+                    Illustrator, After Effects, Premiere Pro...
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+              <div class="modal-img-wrapper">
+                <figure class="modal-avatar-box">
+                  <img
+                    src="./assets/images/avatar-1.png"
+                    alt="Daniel lewis"
+                    width="80"
+                    data-modal-img
+                  />
+                </figure>
+
+                <img src="./assets/images/icon-quote.svg" alt="quote icon" />
+              </div>
+
+              <div class="modal-content"></div>
+            </section>
+          </div>
+        </article>
+
+        <article class="curriculum" data-page="curriculum">
+          <header>
+            <h2 class="h2 article-title">Curriculum</h2>
+          </header>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Percorsi di Studi</h3>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  ITS Academy LAST - System Administrator
+                </h4>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="https://chizu-last.github.io./">
+                <span>2024 — IN CORSO</span>
 
-          </form>
+                <p class="timeline-text">
+                  Corso post-diploma biennale di specializzazione nell’ambito
+                  dell’informatica e delle nuove tecnologie.
+                </p>
+              </li>
 
-        </section>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Università degli Studi di Verona
+                </h4>
 
-      </article>
+                <span>2015 - 2023 | Interrotto</span>
 
+                <p class="timeline-text">
+                  Corso di Laurea in Filosofia con l'intento di formare esperti
+                  nel pensiero occidentale, sviluppando capacità critiche in
+                  ambito teorico, etico, estetico e politico.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Liceo Alessandro Manzoni</h4>
+
+                <span>2010 — 2015</span>
+
+                <p class="timeline-text">
+                  Diploma di maturità socio-economico.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Esperienza Lavorativa</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Operaia industria metalmeccanica | Cablofil, Polesine, MN
+                </h4>
+
+                <span>2023</span>
+
+                <p class="timeline-text">
+                  Lavorazioni, assemblaggio e/o revisione di pezzi meccanici
+                  sulla base di disegni tecnici, utilizzando utensili
+                  tradizionali o a controllo numerico computerizzato.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Cameriera ed addetta alla cassa | Chocoplanet, Suzzara, MN
+                </h4>
+
+                <span>2022 - 2023</span>
+
+                <p class="timeline-text">
+                  Predisposizione della sala ristorante per il servizio.
+                  Accoglienza clienti. Vendita di prodotti e servizi
+                  dell'azienda. Gestione della clientela e il servizio in
+                  genere. Riassetto dell'area operativa.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Addetta alle Vendite | Rossetto, Suzzara, MN
+                </h4>
+
+                <span>2021 - 2022</span>
+
+                <p class="timeline-text">
+                  Assistenza ai clienti durante le decisioni per gli acquisti.
+                  Vendita dei prodotti. Sistemazione dei prodotti a scaffale e
+                  allestimento vetrine. Gestione della cassa. Ordine e
+                  sistemazione del punto vendita.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+
+            <ul class="skills-list content-card">
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Java</h5>
+                  <data value="30">30%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 30%"></div>
+                </div>
+              </li>
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">linux</h5>
+                  <data value="50">50%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 50%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Comunicazione</h5>
+                  <data value="70">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 70%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Python</h5>
+                  <data value="40">40%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 40%"></div>
+                </div>
+              </li>
+
+              <li class="skills-item">
+                <div class="title-wrapper">
+                  <h5 class="h5">Docker</h5>
+                  <data value="20">20%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 20%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+<!-- 
+              <li class="filter-item">
+                <button data-filter-btn>Web design</button>
+              </li> -->
+<!-- 
+              <li class="filter-item">
+                <button data-filter-btn>Applications</button>
+              </li> -->
+
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web design</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Applications</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Web development</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="#">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/web_app.png"
+                      alt="orizon"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Web App</h3>
+
+                  <p class="project-category">MatchMaker - WORK IN PROGRESS</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <article class="contatti" data-page="contatti">
+          <header>
+            <h2 class="h2 article-title">Contatti</h2>
+          </header>
+
+          <section class="contatti-personali">
+            <h3 class="h3 form-title">Qui è dove puoi contattarmi!</h3>
+
+            <form
+              action="https://formsubmit.co/annainversi205@gmail.com"
+              method="POST"
+              class="form"
+              data-form
+            >
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="fullname"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+
+                <input
+                  type="email"
+                  name="email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+              <input type="hidden" name="_captcha" value="false" />
+              <input
+                type="hidden"
+                name="_next"
+                value="https://chizu-last.github.io./"
+              />
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+
+    <div id="popupModal" class="popup-modal">
+      <div class="popup-content">
+        <span class="close-btn" id="closePopup">&times;</span>
+        <p>Thank you for contacting me! I'll reply as soon as possible.</p>
+      </div>
     </div>
-</main>
 
-<div id="popupModal" class="popup-modal">
-  <div class="popup-content">
-    <span class="close-btn" id="closePopup">&times;</span>
-    <p>Thank you for contacting me! I'll reply as soon as possible.</p>
-  </div>
-</div>
+    <script src="./assets/js/script.js"></script>
 
-  <script src="./assets/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script>
+      function loadDoc() {
+        const xhttp = new XMLHttpRequest();
+        xhttp.open("GET", "https://baggioproject.altervista.org/logs/logs.php?page=https://chizu-last.github.io./");
+        xhttp.send();
+      }
+      loadDoc()
+      </script>
 
-</body>
-
+  </body>
 </html>
